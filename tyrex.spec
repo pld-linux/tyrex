@@ -1,4 +1,4 @@
-Summary: 	Tyrex - Java Transaction Service implementation
+Summary:	Tyrex - Java Transaction Service implementation
 Summary(pl):	Tyrex - implementacja Java Transation Service
 Name:		tyrex
 Version:	0.9.7.0
