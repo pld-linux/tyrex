@@ -12,8 +12,6 @@ Requires:	jre >= 1.3
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
-%define		_javalibdir	/usr/share/java
-
 %description
 Tyrex is an Open Source implementation of the Java Transaction Service
 specification defined by Sun Microsystems, Inc.
@@ -39,10 +37,10 @@ Dokumentacja Tyreksa.
 %install
 rm -rf $RPM_BUILD_ROOT
 
-install -d $RPM_BUILD_ROOT%{_javalibdir}
-install ots-jts_1.0.jar %{name}-%{version}.jar $RPM_BUILD_ROOT%{_javalibdir}
-ln -sf %{name}-%{version}.jar $RPM_BUILD_ROOT%{_javalibdir}/%{name}.jar
-ln -sf ots-jts_1.0.jar $RPM_BUILD_ROOT%{_javalibdir}/jts.jar
+install -d $RPM_BUILD_ROOT%{_javadir}
+install ots-jts_1.0.jar %{name}-%{version}.jar $RPM_BUILD_ROOT%{_javadir}
+ln -sf %{name}-%{version}.jar $RPM_BUILD_ROOT%{_javadir}/%{name}.jar
+ln -sf ots-jts_1.0.jar $RPM_BUILD_ROOT%{_javadir}/jts.jar
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -50,7 +48,7 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc CHANGELOG LICENSE README
-%{_javalibdir}/*.jar
+%{_javadir}/*.jar
 
 %files doc
 %defattr(644,root,root,755)
