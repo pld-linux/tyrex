@@ -5,8 +5,6 @@ Version:	0.9.7.0
 Release:	1
 License:	BSD-like license - see LICENSE file for more details
 Group:		Development/Languages/Java
-Group(de):	Entwicklung/Sprachen/Java
-Group(pl):	Programowanie/Jêzyki/Java
 Source0:	ftp://ftp.exolab.org/pub/%{name}/%{name}-%{version}/%{name}-%{version}.tgz
 URL:		http://www.exolab.org/
 BuildArch:	noarch
@@ -26,8 +24,6 @@ Service zdefiniowanej przez Sun Microsystems, Inc.
 Summary:	Tyrex documentation
 Summary(pl):	Dokumentacja Tyreksa
 Group:		Development/Languages/Java
-Group(de):	Entwicklung/Sprachen/Java
-Group(pl):	Programowanie/Jêzyki/Java
 
 %description doc
 Tyrex documentation.
