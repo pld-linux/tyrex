@@ -6,6 +6,7 @@ Release:	1
 License:	BSD-like (see LICENSE)
 Group:		Development/Languages/Java
 Source0:	http://dl.sourceforge.net/%{name}/%{name}-%{version}.tgz
+# Source0-md5:	cd999a03a78e70a5a8ef380f1917ce93
 URL:		http://tyrex.sourceforge.net/
 Requires:	jre >= 1.3
 BuildArch:	noarch
