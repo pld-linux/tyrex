@@ -7,6 +7,7 @@ License:	BSD-like (see LICENSE)
 Group:		Development/Languages/Java
 Source0:	ftp://ftp.exolab.org/pub/%{name}/%{name}-%{version}/%{name}-%{version}.tgz
 URL:		http://www.exolab.org/
+Requires:	jre >= 1.3
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -31,7 +32,6 @@ Tyrex documentation.
 %description doc -l pl
 Dokumentacja Tyreksa.
 
-
 %prep
 %setup -q
 
@@ -42,14 +42,12 @@ install -d $RPM_BUILD_ROOT%{_javalibdir}
 install jts.jar %{name}-%{version}.jar $RPM_BUILD_ROOT%{_javalibdir}
 ln -sf %{name}-%{version}.jar $RPM_BUILD_ROOT%{_javalibdir}/%{name}.jar
 
-gzip -9nf CHANGELOG LICENSE README
-
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc *.gz
+%doc CHANGELOG LICENSE README
 %{_javalibdir}/*.jar
 
 %files doc
