@@ -3,7 +3,7 @@ Summary(pl):	Tyrex - implementacja Java Transation Service
 Name:		tyrex
 Version:	0.9.7.0
 Release:	1
-License:	BSD-like license - see LICENSE file for more details
+License:	BSD-like (see LICENSE)
 Group:		Development/Languages/Java
 Source0:	ftp://ftp.exolab.org/pub/%{name}/%{name}-%{version}/%{name}-%{version}.tgz
 URL:		http://www.exolab.org/
