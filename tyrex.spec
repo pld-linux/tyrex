@@ -1,12 +1,12 @@
 Summary:	Tyrex - Java Transaction Service implementation
 Summary(pl):	Tyrex - implementacja Java Transation Service
 Name:		tyrex
-Version:	0.9.7.0
+Version:	1.0
 Release:	1
 License:	BSD-like (see LICENSE)
 Group:		Development/Languages/Java
-Source0:	ftp://ftp.exolab.org/pub/%{name}/%{name}-%{version}/%{name}-%{version}.tgz
-URL:		http://www.exolab.org/
+Source0:	http://dl.sourceforge.net/%{name}/%{name}-%{version}.tgz
+URL:		http://tyrex.sourceforge.net/
 Requires:	jre >= 1.3
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -39,8 +39,9 @@ Dokumentacja Tyreksa.
 rm -rf $RPM_BUILD_ROOT
 
 install -d $RPM_BUILD_ROOT%{_javalibdir}
-install jts.jar %{name}-%{version}.jar $RPM_BUILD_ROOT%{_javalibdir}
+install ots-jts_%{version}.jar %{name}-%{version}.jar $RPM_BUILD_ROOT%{_javalibdir}
 ln -sf %{name}-%{version}.jar $RPM_BUILD_ROOT%{_javalibdir}/%{name}.jar
+ln -sf ots-jts_%{version}.jar $RPM_BUILD_ROOT%{_javalibdir}/jts.jar
 
 %clean
 rm -rf $RPM_BUILD_ROOT
