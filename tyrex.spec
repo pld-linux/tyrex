@@ -1,5 +1,5 @@
 Summary:	Tyrex - Java Transaction Service implementation
-Summary(pl.UTF-8):   Tyrex - implementacja Java Transation Service
+Summary(pl.UTF-8):	Tyrex - implementacja Java Transation Service
 Name:		tyrex
 Version:	1.0.2
 Release:	1
@@ -22,7 +22,7 @@ Service zdefiniowanej przez Sun Microsystems, Inc.
 
 %package doc
 Summary:	Tyrex documentation
-Summary(pl.UTF-8):   Dokumentacja Tyreksa
+Summary(pl.UTF-8):	Dokumentacja Tyreksa
 Group:		Development/Languages/Java
 
 %description doc
