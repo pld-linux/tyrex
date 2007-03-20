@@ -1,5 +1,5 @@
 Summary:	Tyrex - Java Transaction Service implementation
-Summary(pl.UTF-8):	Tyrex - implementacja Java Transation Service
+Summary(pl):	Tyrex - implementacja Java Transation Service
 Name:		tyrex
 Version:	1.0.2
 Release:	1
@@ -16,19 +16,19 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Tyrex is an Open Source implementation of the Java Transaction Service
 specification defined by Sun Microsystems, Inc.
 
-%description -l pl.UTF-8
-Tyrex jest implementacjÄ… Open Source specyfikacji Java Transaction
+%description -l pl
+Tyrex jest implementacj± Open Source specyfikacji Java Transaction
 Service zdefiniowanej przez Sun Microsystems, Inc.
 
 %package doc
 Summary:	Tyrex documentation
-Summary(pl.UTF-8):	Dokumentacja Tyreksa
+Summary(pl):	Dokumentacja Tyreksa
 Group:		Development/Languages/Java
 
 %description doc
 Tyrex documentation.
 
-%description doc -l pl.UTF-8
+%description doc -l pl
 Dokumentacja Tyreksa.
 
 %prep
