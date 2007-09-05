@@ -1,12 +1,12 @@
 Summary:	Tyrex - Java Transaction Service implementation
 Summary(pl.UTF-8):	Tyrex - implementacja Java Transation Service
 Name:		tyrex
-Version:	1.0.2
-Release:	2
+Version:	1.0.3
+Release:	1
 License:	BSD-like (see LICENSE)
 Group:		Development/Languages/Java
 Source0:	http://dl.sourceforge.net/tyrex/%{name}-%{version}.tgz
-# Source0-md5:	9d50212d73fb427ad8f2dc764167417b
+# Source0-md5:	f1c9b178bd1840094a6ba80310bfbcdd
 URL:		http://tyrex.sourceforge.net/
 Requires:	jre >= 1.3
 BuildArch:	noarch
