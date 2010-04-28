@@ -10,8 +10,6 @@ Source0:	http://dl.sourceforge.net/tyrex/%{name}-%{version}.tgz
 URL:		http://tyrex.sourceforge.net/
 Requires:	jre >= 1.3
 BuildArch:	noarch
-# same as java-sun
-ExclusiveArch:	i586 i686 pentium3 pentium4 athlon %{x8664} noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
